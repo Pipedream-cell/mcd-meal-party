@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>麦麦开饭局 · 每个人都吃得合心意</title><link rel="stylesheet" href="/style.css"><script src="/app.js" type="module"></script></head>
+<body>
+  <header><a href="/" class="brand"><span class="mark">开饭</span><strong>麦麦开饭局</strong></a><span class="tag">2026 开发者创意作品 · 非官方产品</span></header>
+  <main>
+    <section class="hero"><div class="eyebrow">GOOD FOOD. GOOD COMPANY.</div><h1>一桌人的偏好，<br>一份刚好的方案。</h1><p>把预算、口味和同事的选择放在一起。<br>先照顾每一个人，再让整桌吃得合心意。</p><div class="chips"><span>按人分餐</span><span>预算约束</span><span>公平优先</span><span>官方 MCP 核价</span></div></section>
+    <section class="workspace">
+      <div class="setup"><div class="section-label">01 / 组织这一餐</div><h2>今天，几个人开饭？</h2><label for="budget">总预算（元，含配送）</label><div class="budget"><span>¥</span><input id="budget" type="number" min="0" max="10000" step="0.01" value="120"></div><div id="members"></div><details><summary>查看或编辑团队与菜单 JSON</summary><p>可修改成员偏好、完整套餐与配送费。回避条件需要明确的已知成分信息。</p><textarea id="input" spellcheck="false" aria-label="配餐输入 JSON"></textarea></details><button id="plan">生成开饭方案 <span>↗</span></button><p class="small">页面仅在本地计算。真实查询请通过 Skill 或命令行连接 MCP。</p></div>
+      <div class="results"><div class="section-label">02 / 让每个人都有一份</div><div class="result-top"><h2 id="result-title">看看这一餐的方案</h2><span class="demo">虚构数据演示</span></div><p id="status" role="status" aria-live="polite"></p><div id="assignments"></div><div id="totals"></div><div class="actions"><button class="secondary" id="copy">复制分餐清单</button><button class="secondary" id="download">下载方案 JSON</button></div><div class="notice">餐品、价格与标签均为演示。真实方案需查询门店可售菜单，并以官方 calculate-price 试算为准；回避标签不能证明过敏安全。</div></div>
+    </section>
+    <section class="flow"><div><b>01</b><h3>说清楚这一餐</h3><p>预算、人数、口味。过敏需求单独向官方核实。</p></div><div><b>02</b><h3>查当下的门店</h3><p>Skill 发现官方工具，查询菜单与套餐详情。</p></div><div><b>03</b><h3>把选择讲明白</h3><p>优先提高最低偏好匹配，再优化全员体验与费用。</p></div><div><b>04</b><h3>核价后再决定</h3><p>官方试算核验费用，由你在官方渠道完成点餐。</p></div></section>
+  </main><footer>麦麦开饭局 · 独立开发的开源参赛作品 <span>Powered by McDonald's China MCP</span></footer>
+</body></html>

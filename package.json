@@ -1,0 +1,23 @@
+{
+  "name": "mcd-meal-party",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "麦麦开饭局：基于麦当劳 MCP 的团队预算配餐 Skill",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "demo": "node src/cli.js demo",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "mcp:tools": "node --env-file-if-exists=.env src/cli.js tools",
+    "check": "node scripts/check-submission.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "ajv": "8.20.0",
+    "zod": "^4.0.0"
+  },
+  "license": "MIT"
+}

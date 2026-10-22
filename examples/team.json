@@ -1,0 +1,18 @@
+{
+  "budgetFen": 12000,
+  "deliveryFeeFen": 600,
+  "members": [
+    { "name": "小林", "preferTags": ["鸡肉", "热饮"], "avoidTags": ["辣"] },
+    { "name": "小周", "preferTags": ["牛肉"], "avoidTags": [] },
+    { "name": "小陈", "preferTags": ["鸡肉"], "avoidTags": ["咖啡因"] },
+    { "name": "小许", "preferTags": ["热饮"], "avoidTags": [] }
+  ],
+  "source": { "kind": "demo", "description": "虚构套餐，仅用于算法演示，非麦当劳真实餐品、价格或成分" },
+  "menu": [
+    { "id": "demo-a", "name": "演示鸡肉热饮组合", "priceFen": 2600, "tags": ["鸡肉", "热饮"], "knownAbsentTags": ["辣"], "available": true },
+    { "id": "demo-b", "name": "演示牛肉组合", "priceFen": 2900, "tags": ["牛肉"], "knownAbsentTags": [], "available": true },
+    { "id": "demo-c", "name": "演示鸡肉配水组合", "priceFen": 2300, "tags": ["鸡肉"], "knownAbsentTags": ["辣", "咖啡因"], "available": true },
+    { "id": "demo-d", "name": "演示基础热饮组合", "priceFen": 2000, "tags": ["热饮"], "knownAbsentTags": ["辣"], "available": true },
+    { "id": "demo-e", "name": "演示辣味组合", "priceFen": 1800, "tags": ["辣", "鸡肉"], "knownAbsentTags": ["咖啡因"], "available": false }
+  ]
+}

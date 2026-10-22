@@ -1,0 +1,11 @@
+{
+  "storeCode": "1950482",
+  "candidateCodes": ["9900005456", "9900005464", "9900005413"],
+  "budgetFen": 15000,
+  "members": [
+    { "name": "成员A", "preferTags": ["麦辣鸡腿汉堡"], "avoidTags": [] },
+    { "name": "成员B", "preferTags": ["100%纯牛肉"], "avoidTags": [] },
+    { "name": "成员C", "preferTags": ["麦香鱼系列"], "avoidTags": [] },
+    { "name": "成员D", "preferTags": ["中薯条"], "avoidTags": [] }
+  ]
+}
